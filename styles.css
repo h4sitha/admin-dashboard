@@ -65,4 +65,25 @@ nav#sidebar > ul {
 main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+main * {
+    border: 1px solid orange;
+}
+
+main > .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, 1fr);
+}
+
+main > .left > .heading {
+    grid-column: 1 / 3;
+}
+
+main > .right {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px 1fr;
 }
