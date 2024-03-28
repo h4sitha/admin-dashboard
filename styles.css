@@ -1,5 +1,5 @@
 body > * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -19,10 +19,11 @@ header {
     display: grid;
     grid-template-rows: 2fr 3fr;
     padding: 0 50px;
+    box-shadow: 0 5px 5px 0 hsla(201, 90%, 27%, 0.2);
 }
 
 header * {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 header > .first {
@@ -35,7 +36,10 @@ header > .first {
 
 header > .second {
     display: grid;
-    grid-template-columns: 200px 1fr repeat(3, 250px);
+    grid-template-columns: auto 1fr;
+    gap: 25px;
+    align-items: center;
+    grid-auto-flow: column;
 }
 
 /* header element styles */
@@ -70,13 +74,45 @@ header > .first input:focus {
 
 .profile-pic {
     border-radius: 50%;
-    background-color: lightcoral;
+    background-color: #dc2626;
     width: 60px;
     height: 60px;
 }
 
 header > .first > span {
     font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* header lower part */
+
+header > .second > .profile-pic {
+    height: 80px;
+    width: 80px;
+}
+
+header > .second > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header > .second h2 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+header > .second span {
+    font-weight: bold;
+}
+
+header > .second button {
+    padding: 12px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #0369a1;
+    color: #f0f9ff;
+    font-size: inherit;
     font-weight: bold;
 }
 
@@ -158,7 +194,7 @@ main {
 }
 
 main * {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 main > .left {
