@@ -74,11 +74,13 @@ header input:focus {
     background-color: #dc2626;
     width: 3.75rem;
     height: 3.75rem;
+    cursor: pointer;
 }
 
 header > .first > span {
     font-size: 1.4rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* header lower part */
@@ -111,6 +113,11 @@ header > .second button {
     color: #f0f9ff;
     font-size: inherit;
     font-weight: bold;
+    cursor: pointer;
+}
+
+header > .second button:hover {
+    background-color: hsl(201, 96%, 25%);
 }
 
 /* sidebar */
@@ -179,6 +186,15 @@ nav#sidebar li svg {
     height: 1.5625rem;
 }
 
+nav#sidebar li:hover {
+    a {
+        color: hsl(204, 100%, 70%);
+    }
+    svg {
+        fill: hsl(204, 100%, 70%);
+    }
+}
+
 /* main */
 
 main {
@@ -226,6 +242,8 @@ div.project {
     border-radius: 0.875rem;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
 }
 
 div.project::before {
@@ -236,6 +254,11 @@ div.project::before {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+div.project:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
 }
 
 h4,
@@ -269,6 +292,7 @@ main > .right > div {
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.875rem;
     padding: 2.8125rem 2.5rem;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
 }
 
 h5 {
@@ -280,6 +304,15 @@ h5 {
 hr {
     margin: 1.5625rem 0;
     opacity: 0.4;
+}
+
+div.announcement {
+    cursor: pointer;
+}
+
+div.announcement:hover {
+    transform: translateX(2px);
+    transition: 0.2s;
 }
 
 /* trending */
@@ -307,22 +340,35 @@ main > .right .trending-text {
     border-radius: 50%;
 }
 
-main > .right > div:last-of-type > div:nth-of-type(1) > .trending-circle {
+div.trending:nth-of-type(1) > .trending-circle {
     background-color: lightgreen;
 }
 
-main > .right > div:last-of-type > div:nth-of-type(2) > .trending-circle {
+div.trending:nth-of-type(2) > .trending-circle {
     background-color: lightblue;
 }
 
-main > .right > div:last-of-type > div:nth-of-type(3) > .trending-circle {
+div.trending:nth-of-type(3) > .trending-circle {
     background-color: lightslategray;
 }
 
-main > .right > div:last-of-type > div:nth-of-type(4) > .trending-circle {
+div.trending:nth-of-type(4) > .trending-circle {
     background-color: lightseagreen;
 }
 
 svg {
     cursor: pointer;
+}
+
+div.trending {
+    cursor: pointer;
+}
+
+div.trending:hover {
+    transform: translateX(1px);
+    transition: 0.2s;
+}
+
+div.trending-text > span:first-of-type {
+    font-weight: bold;
 }
