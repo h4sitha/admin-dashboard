@@ -205,6 +205,7 @@ main {
     background-color: #e0f2fe;
     padding: 2.5rem 1.875rem;
     gap: 1.875rem;
+    align-items: start;
 }
 
 main > .left {
@@ -223,6 +224,7 @@ main > .right {
     display: grid;
     grid-template-rows: auto 1fr auto 1fr;
     gap: 2.5rem;
+    align-items: start;
 }
 
 /* main element styles */
@@ -245,6 +247,7 @@ div.project {
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
+    min-height: 160px;
 }
 
 div.project::before {
