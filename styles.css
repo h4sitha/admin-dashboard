@@ -210,7 +210,7 @@ main {
 
 main > .left {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30.77rem, 1fr));
     grid-template-rows: auto 1fr 1fr;
     gap: 2.5rem 1.875rem;
     grid-auto-rows: 1fr;
@@ -246,8 +246,8 @@ div.project {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
-    min-height: 160px;
+    box-shadow: 0 0 0.38rem hsla(0, 0%, 0%, 0.1);
+    min-height: 12.31rem;
 }
 
 div.project::before {
@@ -261,7 +261,7 @@ div.project::before {
 }
 
 div.project:hover {
-    transform: translateY(-2px);
+    transform: translateY(-0.15rem);
     transition: 0.2s;
 }
 
@@ -296,7 +296,7 @@ main > .right > div {
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.875rem;
     padding: 2.8125rem 2.5rem;
-    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 0 0.38rem hsla(0, 0%, 0%, 0.1);
 }
 
 h5 {
@@ -315,7 +315,7 @@ div.announcement {
 }
 
 div.announcement:hover {
-    transform: translateX(2px);
+    transform: translateX(0.15rem);
     transition: 0.2s;
 }
 
@@ -369,7 +369,7 @@ div.trending {
 }
 
 div.trending:hover {
-    transform: translateX(1px);
+    transform: translateX(0.08rem);
     transition: 0.2s;
 }
 
