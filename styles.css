@@ -173,12 +173,14 @@ nav#sidebar h1 {
     font-size: 2rem;
 }
 
-nav#sidebar li {
+nav#sidebar a {
     display: flex;
     align-items: center;
     font-size: 1.25rem;
     font-weight: bold;
     gap: 25px;
+    text-decoration: none;
+    color: #f0f9ff;
 }
 
 nav#sidebar li svg {
@@ -331,4 +333,8 @@ main > .right > div:last-of-type > div:nth-of-type(3) > .trending-circle {
 
 main > .right > div:last-of-type > div:nth-of-type(4) > .trending-circle {
     background-color: lightseagreen;
+}
+
+svg {
+    cursor: pointer;
 }
